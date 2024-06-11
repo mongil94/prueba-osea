@@ -7,9 +7,11 @@ import { CoreService } from './services/core.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { VIEWS } from './views';
+import { COMPONENTS } from './components';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, VIEWS],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -21,6 +23,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
         deps: [HttpClient],
       },
     }),
+    COMPONENTS,
   ],
   providers: [CoreService],
   bootstrap: [AppComponent],
