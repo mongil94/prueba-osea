@@ -1,49 +1,47 @@
-{
-  "companies": [
-    {
-      "id": 1,
-      "name": "Apple Corps Ltd",
-      "country": "Colombia",
-      "createYear": 1968,
-      "employees": 2000,
-      "rating": 8.32,
-      "songs": [2, 3]
-    },
-    {
-      "id": 2,
-      "name": "Vinilo Some Girls",
-      "country": "England",
-      "createYear": 2005,
-      "employees": 611,
-      "rating": 8.19,
-      "songs": [4, 8]
-    },
-    {
-      "id": 3,
-      "name": "Universal Music Group (UMG)",
-      "country": "Greece",
-      "createYear": 1994,
-      "employees": 511,
-      "rating": 8.09,
-      "songs": [5, 6, 7]
-    },
-    {
-      "id": 4,
-      "name": "Warner Music Group (WMG)",
-      "country": "Philippines",
-      "createYear": 2005,
-      "employees": 42,
-      "rating": 9.26,
-      "songs": [8, 9]
-    },
-    {
-      "id": 5,
-      "name": "Sony Music Entertainment (SME)",
-      "country": "China",
-      "createYear": 1999,
-      "employees": 921,
-      "rating": 1.77,
-      "songs": []
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "Apple Corps Ltd",
+    "country": "Colombia",
+    "createYear": 1968,
+    "employees": 2000,
+    "rating": 8.32,
+    "songs": [2, 3]
+  },
+  {
+    "id": 2,
+    "name": "Vinilo Some Girls",
+    "country": "England",
+    "createYear": 2005,
+    "employees": 611,
+    "rating": 8.19,
+    "songs": [4, 8]
+  },
+  {
+    "id": 3,
+    "name": "Universal Music Group (UMG)",
+    "country": "Greece",
+    "createYear": 1994,
+    "employees": 511,
+    "rating": 8.09,
+    "songs": [5, 6, 7]
+  },
+  {
+    "id": 4,
+    "name": "Warner Music Group (WMG)",
+    "country": "Philippines",
+    "createYear": 2005,
+    "employees": 42,
+    "rating": 9.26,
+    "songs": [8, 9]
+  },
+  {
+    "id": 5,
+    "name": "Sony Music Entertainment (SME)",
+    "country": "China",
+    "createYear": 1999,
+    "employees": 921,
+    "rating": 1.77,
+    "songs": []
+  }
+]
