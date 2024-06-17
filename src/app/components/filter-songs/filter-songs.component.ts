@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import {
   ReactiveFormsModule,
   FormsModule,
@@ -9,7 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TranslateModule } from '@ngx-translate/core';
-import { SongResponse } from 'src/app/interfaces/song/song-response.interface';
+import { MatCardModule } from '@angular/material/card';
+import { Subject, takeUntil } from 'rxjs';
+import { CoreService } from 'src/app/services/core.service';
 
 @Component({
   selector: 'filter-songs',
@@ -22,14 +24,26 @@ import { SongResponse } from 'src/app/interfaces/song/song-response.interface';
     MatInputModule,
     MatButtonModule,
     TranslateModule,
+    MatCardModule,
   ],
 })
-export class FilterSongComponent implements OnInit {
+export class FilterSongComponent implements OnInit, OnDestroy {
+  constructor(private _coreService: CoreService) {}
+
+  private _destroy$: Subject<void> = new Subject<void>();
+
   public filterSongForm = new FormGroup({
-    songName: new FormControl(''),
+    songName: new FormControl('', { nonNullable: true }),
   });
-  @Input() data: SongResponse[];
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.filterSongForm
+      .get('songName')
+      ?.valueChanges.pipe(takeUntil(this._destroy$))
+      .subscribe((newValue) => this._coreService.receiveSongFilter(newValue));
+  }
+  ngOnDestroy(): void {
+    this._destroy$.next();
+    this._destroy$.complete();
   }
 }

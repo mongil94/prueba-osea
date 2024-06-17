@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, first } from 'rxjs';
+import { OriginEnum } from 'src/app/enums/origin.enum';
 import { SongResponse } from 'src/app/interfaces/song/song-response.interface';
 import { CoreService } from 'src/app/services/core.service';
 
@@ -18,7 +19,10 @@ export class SongComponent implements OnInit, OnDestroy {
       .getSongs()
       .pipe(first())
       .subscribe({
-        next: (response) => (this.dataTable = response),
+        next: (response) => {
+          this.dataTable = response;
+          this._coreService.setSongData(response);
+        },
       });
   }
 

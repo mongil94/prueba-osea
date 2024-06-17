@@ -9,6 +9,8 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { VIEWS } from './views';
 import { COMPONENTS } from './components';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [AppComponent, VIEWS],
@@ -24,6 +26,8 @@ import { COMPONENTS } from './components';
       },
     }),
     COMPONENTS,
+    BrowserAnimationsModule,
+    MatCardModule,
   ],
   providers: [CoreService],
   bootstrap: [AppComponent],
