@@ -1,67 +1,65 @@
-{
-  "artists": [
-    {
-      "id": 1,
-      "name": "John Mayer",
-      "bornCity": "Conecticut",
-      "birthdate": "16/10/1977",
-      "img": "http://dummyimage.com/600x400.png/dddddd/000000",
-      "rating": 9.03,
-      "songs": [1, 6]
-    },
-    {
-      "id": 2,
-      "name": "The Beatles",
-      "bornCity": "Liverpool",
-      "birthdate": "19/04/1975",
-      "img": "http://dummyimage.com/600x400.png/5fa2dd/000000",
-      "rating": 2.43,
-      "songs": [2, 3]
-    },
-    {
-      "id": 3,
-      "name": "John Lennon",
-      "bornCity": "Liverpool",
-      "birthdate": "10/04/1986",
-      "img": null,
-      "rating": 7.92,
-      "songs": [2, 3, 8]
-    },
-    {
-      "id": 4,
-      "name": "The Rolling Stones",
-      "bornCity": "London",
-      "birthdate": "04/08/1990",
-      "img": "http://dummyimage.com/600x400.png/4fa25d/000000",
-      "rating": 4.37,
-      "songs": [4, 8]
-    },
-    {
-      "id": 5,
-      "name": "U2",
-      "bornCity": "London",
-      "birthdate": "30/12/1990",
-      "img": "https://dummyimage.com/600x400.png/2f125d/ffffff",
-      "rating": 3.92,
-      "songs": [5, 7]
-    },
-    {
-      "id": 6,
-      "name": "The Smashing Pumpkins",
-      "bornCity": "Pitomača",
-      "birthdate": "02/01/1968",
-      "img": "https://dummyimage.com/600x400.png/bf125d/ffffff",
-      "rating": 8.79,
-      "songs": [9]
-    },
-    {
-      "id": 7,
-      "name": "Jimi Hendrix",
-      "bornCity": "London",
-      "birthdate": "28/10/1953",
-      "img": "https://dummyimage.com/600x400.png/1f12ff/ffffff",
-      "rating": 10.0,
-      "songs": [11, 12]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "John Mayer",
+    "bornCity": "Conecticut",
+    "birthdate": "16/10/1977",
+    "img": "http://dummyimage.com/600x400.png/dddddd/000000",
+    "rating": 9.03,
+    "songs": [1, 6]
+  },
+  {
+    "id": 2,
+    "name": "The Beatles",
+    "bornCity": "Liverpool",
+    "birthdate": "19/04/1975",
+    "img": "http://dummyimage.com/600x400.png/5fa2dd/000000",
+    "rating": 2.43,
+    "songs": [2, 3]
+  },
+  {
+    "id": 3,
+    "name": "John Lennon",
+    "bornCity": "Liverpool",
+    "birthdate": "10/04/1986",
+    "img": null,
+    "rating": 7.92,
+    "songs": [2, 3, 8]
+  },
+  {
+    "id": 4,
+    "name": "The Rolling Stones",
+    "bornCity": "London",
+    "birthdate": "04/08/1990",
+    "img": "http://dummyimage.com/600x400.png/4fa25d/000000",
+    "rating": 4.37,
+    "songs": [4, 8]
+  },
+  {
+    "id": 5,
+    "name": "U2",
+    "bornCity": "London",
+    "birthdate": "30/12/1990",
+    "img": "https://dummyimage.com/600x400.png/2f125d/ffffff",
+    "rating": 3.92,
+    "songs": [5, 7]
+  },
+  {
+    "id": 6,
+    "name": "The Smashing Pumpkins",
+    "bornCity": "Pitomača",
+    "birthdate": "02/01/1968",
+    "img": "https://dummyimage.com/600x400.png/bf125d/ffffff",
+    "rating": 8.79,
+    "songs": [9]
+  },
+  {
+    "id": 7,
+    "name": "Jimi Hendrix",
+    "bornCity": "London",
+    "birthdate": "28/10/1953",
+    "img": "https://dummyimage.com/600x400.png/1f12ff/ffffff",
+    "rating": 10.0,
+    "songs": [11, 12]
+  }
+]
